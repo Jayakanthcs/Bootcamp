@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            height: 300px;
+            width: 400px;
+        }
+
+
+        #POPUP {
+            background-color: black;
+            display: none;
+            height: 250px;
+            width: 400px;
+            transform: translate(-50%,-50%);
+            position: fixed;
+            margin-left: 600px;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>POPUP BUTTON</h1>
+        <h2>BOOTCAMP</h2>
+        <p style="padding-left: 5px;text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Eveniet quo quaerat delectus facilis sunt nobis
+            incidunt iste dolore id ullam ab deleniti sequi itaque, animi commodi quasi. Eligendi, molestiae illum.</p>
+        <button onclick="box1()" style="margin-left: 340px;">Click</button>
+    </div>
+    <br>
+    <div id="POPUP">
+        <h1 style="color: white;">POPUP BOX</h1>
+        <p style="color: white;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis consequatur quae doloribus quam sunt
+            dolor sequi adipisci commodi repudiandae quas. Maiores, natus? Ea dignissimos, assumenda nam totam
+            laudantium iusto adipisci.</p>
+            <button onclick="box2()" style="margin-left: 350px;">click</button>
+    </div>
+    <script >
+        function box1()
+        {
+            document.getElementById("POPUP").style.display="block";
+        }
+        function box2()
+        {
+            document.getElementById("POPUP").style.display="none";
+        }
+    </script>
+</body>
+
+</html>
